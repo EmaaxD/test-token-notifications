@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "test-push-token",
+    "description": "prueba tecnica push token",
     "slug": "test-push-token",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,12 +12,26 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#ffffff"
+        }
+      ]
+    ],
     "updates": {
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
       "**/*"
     ],
+    "notification": {
+      "color": "#e8e8e8",
+      "iosDisplayInForeground": true,
+      "androidMode": "collapse",
+      "androidCollapsedTitle": "New Notification"
+    },
     "ios": {
       "supportsTablet": true
     },
@@ -24,10 +39,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.testtoke.testtoken"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4d7b3b7b-f996-4e16-87e5-3b4629f85edb"
+      }
     }
   }
 }
