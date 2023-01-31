@@ -40,14 +40,15 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.testtoke.testtoken"
+      "package": "com.testtoken.apptesttoken",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "4d7b3b7b-f996-4e16-87e5-3b4629f85edb"
+        "projectId": "e1da2c69-526a-482b-8c47-8144921f91d2"
       }
     }
   }
